@@ -28,7 +28,24 @@
 						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": false
+					"firstRowOnly": true
+				}
+			},
+			{
+				"name": "Set Start Time",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "start_time",
+					"value": {
+						"value": "@utcNow()",
+						"type": "Expression"
+					}
 				}
 			}
 		],
@@ -36,6 +53,11 @@
 			"table_id": {
 				"type": "string",
 				"defaultValue": "1"
+			}
+		},
+		"variables": {
+			"start_time": {
+				"type": "String"
 			}
 		},
 		"annotations": []
