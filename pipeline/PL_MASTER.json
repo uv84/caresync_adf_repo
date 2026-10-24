@@ -70,10 +70,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"pipeline": {
-						"referenceName": "PL_SILVER_TO_GOLD",
-						"type": "PipelineReference"
-					},
 					"waitOnCompletion": true,
 					"parameters": {
 						"adf_run_id": {
@@ -99,10 +95,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"pipeline": {
-						"referenceName": "PL_SEND_EMAIL",
-						"type": "PipelineReference"
-					},
 					"waitOnCompletion": true,
 					"parameters": {
 						"adf_run_id": {
